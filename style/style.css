@@ -1,0 +1,123 @@
+
+
+.work-sans-font{
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*shared stlye*/
+.dispaly-flex{
+  display: flex;
+}
+main{
+  max-width:1152px ;
+  margin: 0 auto;
+}
+main > section{
+  margin-top: 130px;
+}
+
+
+
+/* hearder*/
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+.nav-items{
+  list-style:  none;
+  text-decoration: none;
+}
+.nav-links{
+  
+  gap: 30px;
+}
+.nav-link{
+  text-decoration: none;
+  
+}
+header{
+  display: flex;
+  flex-direction: column;
+  height: 66.1rem;
+  
+  background-color: rgba(255, 143, 12, 0.1);
+  margin: 0 auto;
+}
+.hero-promo{
+
+  align-items: center;
+  max-width:850px ;
+  margin-bottom: 50px;
+}
+.hero{
+  max-width:850px ;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-image{
+  max-width:100% ; /* its not wroking*/
+}
+
+.btn-primary{
+  width: 180px;
+  height: 64px;
+  color: white;
+  border-radius: 8px;
+  background-color:#FF900E ;
+  font-size: 20px;
+  border: none;
+
+}
+.btn-primary:hover{
+  cursor: pointer;
+  opacity: 50%;
+}
+/*main section teams*/
+
+.teams-img-container{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 24px;
+}
+.teams{
+  margin-top: 50px;
+  gap: 73px;
+  justify-content: center;
+  align-items: center;
+}
+.feature-title{
+  font-weight: bold;
+  font-size: 40px;
+}
+.of-Our{
+  color: black;
+}
+
+/*responsive*/
+@media screen and (max-width: 576px) {
+
+  .teams,
+  .hero,
+  .nav-bar,
+  .nav-links
+  {
+    flex-direction: column;
+    
+   
+  } 
+  .teams-img-container{
+    grid-template-columns: repeat(1,1fr);
+  } 
+  .team-img{
+    width: 100%;
+  }
+
+
+  
+ }
